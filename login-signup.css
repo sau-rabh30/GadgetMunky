@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #383838;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("LoginFolder/login-bg.jpg");
+    background-position: fixed;
+}
+
+.inner { padding: 80px 20px; }
+
+
+
+
+
+
+/*--------------navbar css-------------*/
+
+
+.logoimg{
+    border-radius: 25px;
+}
+
+.categories .small-container .row .col-3 img{
+    border-radius: 23px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+.navbar nav #MenuItems li #account{
+    border-bottom: 5px solid rgb(69, 69, 65);
+}
+
+
+
+/*----------------end of navbar css-----------*/
+
+
+
+
+
+div#container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container section{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 960px;
+    margin: 30px 0;
+    background-color: transparent;
+    /*background-color: rgba(255, 255, 255, 0.7); */
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(30px);
+    text-align: center;
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+div#container section article{
+    width: 45%;
+    background-color: rgb(242, 195, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container section article h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px dotted #000;
+}
+
+div#container section article p{
+    font-size: 20px;
+    color:#000;
+    margin-top: 10px;
+}
+
+div#container section article a.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border:#000 solid 2px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.2s all ease;
+    box-shadow: 0 2px 5px 0 #454545;
+}
+
+div#container section article a.btn:hover {
+    background-color: #000000;
+    color:#f5d400;
+    scale: 0.8;
+}
+
+div#container section aside{
+    width: 55%;
+}
+
+div#container section aside h2{
+    font-size: 40px;
+    color: #282828;
+    font-weight: 700;
+}
+
+div#container section aside p{
+    font-size: 20px;
+    color: #282828;
+}
+
+nav#socialLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+nav#socialLogin a{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+nav#socialLogin a.google{
+    background-image: url('LoginFolder/google.jpg');
+}
+
+nav#socialLogin a.github{
+    background-image: url('LoginFolder/github.jpg');
+}
+
+nav#socialLogin a.linkedin{
+    background-image: url('LoginFolder/linkedin.jpg');
+}
+
+form{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 350px;
+    margin: 30px auto 0 auto; 
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    width: calc(100% - 55px);
+    border: none;
+    padding: 10px 15px  8px 40px;
+    margin: 8px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+
+form input[type=text] {
+    background-image: url('LoginFolder/profile-icon.jpg');
+}
+
+form input[type=email] {
+    background-image: url('LoginFolder/email-icon.webp');
+}
+
+form input[type=password] {
+    background-image: url('LoginFolder/lock.png');
+    
+}
+
+form button[type=submit]{
+    margin-top: 20px;
+    border: none;
+    background-color:  rgb(242, 195, 137);
+    color:#000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: 0.2s all ease;
+    box-shadow: 0 2px 5px 0 #454545;
+}
+
+form button[type=submit]:hover {
+    background-color: #000;
+    color: #f5d400;
+    scale: 0.8;
+}
+
+@media(max-width: 760px) {
+    div#container section{
+        flex-flow: column;
+    }
+
+    div#container section article,
+    div#container section aside {
+        width: 100%;
+    }
+}
