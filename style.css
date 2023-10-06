@@ -94,6 +94,7 @@ p{
 .btn:hover{
     background: #563434;
     scale: 1.2;
+    box-shadow: 0 0 30px 0 orange;
 }
 
 .header{
@@ -132,6 +133,7 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.4s;
+
 }
 
 .col-4 img{
@@ -201,6 +203,7 @@ small{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: transform 0.5s;
+    border-radius: 23px;
 }
 
 .testimonial .col-3 img{
@@ -211,6 +214,7 @@ small{
 
 .testimonial .col-3:hover{
     transform: translateY(-25px);
+    box-shadow: 0 0 20px 0px #25d0ff;
 }
 
 .ri-double-quotes-l{
@@ -426,5 +430,3 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
-
-
